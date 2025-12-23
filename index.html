@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAYRA APURIMAC E.I.R.L.</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="https://www.wayraapurimac-eirl.com/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado o Header -->
+    <header id="main-header">
+  <div class="banner">
+    <!-- Logo que lleva al inicio -->
+    <a href="#" id="logo-inicio" onclick="showSection('inicio')" class="logo-link">
+      <img src="imagenes/logowayra2.png" alt="Logo WAYRA" class="logo">
+    </a>
+
+    <!-- Menú principal -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#" onclick="showSection('quienes')">¿QUIÉNES SOMOS?</a></li>
+        <li><a href="#" onclick="showSection('proyectos')">NUESTROS PROYECTOS</a></li>
+        <li><a href="#" onclick="showSection('cotizacion')">SOLICITAR COTIZACIÓN</a></li>
+        <li><a href="#" onclick="showSection('contacto')">CONSULTA</a></li>
+      </ul>
+    </nav>
+
+    <!-- Iconos a la derecha -->
+    <div class="iconos-header">
+      <a href="https://wa.me/51941468993" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:wayraapurimac@gmail.com" title="Correo">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+    <!-- Pantalla Principal (Inicio de la web) -->
+    <section id="inicio" class="section visible">
+        <div class="slider-container">
+            <div class="slider">
+            <img src="imagenes/abancay1.jpg" alt="Imagen 1">
+            <img src="imagenes/abancay2.jpg" alt="Imagen 2">
+            <img src="imagenes/abancay3.jpg" alt="Imagen 3">
+            <img src="imagenes/abancay4.jpg" alt="Imagen 4">
+        </div>
+            <div class="slider-text">
+                <h1>WAYRA APURIMAC E.I.R.L.</h1>
+                <p>
+                    Lograr construir un mejor futuro para nuestros ciudadanos,<br>
+                    desempeñando con dedicacion nuestra labor y compromiso<br>
+                    con la región y el pais.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUIENES SOMOS -->
+    <section id="quienes" class="section">
+    <div class="qs-img">
+        <img src="imagenes/banner_somos.jpg" alt="Integrantes" style="width: 100%; max-width: 100%; height: 300px;">
+    </div>
+    <div class="qs-container">
+        <div class="qs-menu">
+            <button onclick="showQS('empresa')" id="qs-empresa" class="active"><i class="fas fa-building"></i> NUESTRA EMPRESA </button>
+            <!-- <button onclick="showQS('mision-vision')" id="qs-mision-vision"><i class="fas fa-bullseye"></i> MISIÓN /<i class="fas fa-eye"></i>VISION </button> -->
+            <button onclick="showQS('valores')" id="qs-valores"><i class="fas fa-heart"></i> VALORES </button>
+            <button onclick="showQS('datos')" id="qs-datos"><i class="fas fa-info-circle"></i> DATOS GENERALES </button>
+        </div>
+        <div class="qs-info">
+            <div id="info-empresa" class="qs-content visible">
+                <!--<h2>NUESTRA EMPRESA</h2>-->
+                <div class="empresa-tarjetas-fixed">
+    <!-- TARJETA: Sobre Nosotros -->
+    <div class="tarjeta-fixed tarjeta-empresa">
+      <div class="tarjeta-fixed__inner">
+        <div class="tarjeta-fixed__front">
+          <img src="imagenes/sobre_nosotros_icono.png" alt="Icono Empresa">
+          <h3>Sobre Nosotros</h3>
+        </div>
+        <div class="tarjeta-fixed__back">
+          Experiencia en formulacion de Proyectos de Inversion bajo el Sistema de Invierte.Pe, Expedientes Técnicos, Mantenimiento, Supervision y Ejecucion de Obras Civiles bajo el Reglamento Nacional de Edificaciones (RNE). Nuestros principales clientes son los gobiernos locales, provinciales y regionales.
+        </div>
+      </div>
+    </div>
+
+<!-- TARJETA: Nuestro Personal -->
+    <div class="tarjeta-fixed tarjeta-personal">
+      <div class="tarjeta-fixed__inner">
+        <div class="tarjeta-fixed__front">
+          <img src="imagenes/personal_icono.png" alt="Icono Personal">
+          <h3>Nuestro Personal</h3>
+        </div>
+        <div class="tarjeta-fixed__back">
+          Contamos con profesionales y técnicos  altamente capacitados que prestan sus servicios de calidad para el beneficio de la poblacion demandante; asi mismo nuestra experiencia nos ha otorgado confianza y respaldo para posicionarnos en el mercado Local y Rgional.
+        </div>
+      </div>
+    </div>
+
+    <!-- TARJETA: Misión -->
+    <div class="tarjeta-fixed tarjeta-mision">
+      <div class="tarjeta-fixed__inner">
+        <div class="tarjeta-fixed__front">
+          <img src="imagenes/nuestra_mision_icono.png" alt="Icono Misión">
+          <h3>Misión</h3>
+        </div>
+        <div class="tarjeta-fixed__back">
+          Disponer de profesionales y técnicos comprometidos a la mejora continua del desarrollo del país. Fomentar una cultura proactiva con nuestros profesionales y técnicos. Desarrollar nuestras actividades con responsabilidad, innovación y preservación del medio ambiente.
+        </div>
+      </div>
+    </div>
+
+    <!-- TARJETA: Visión -->
+    <div class="tarjeta-fixed tarjeta-vision">
+      <div class="tarjeta-fixed__inner">
+        <div class="tarjeta-fixed__front">
+          <img src="imagenes/nuestra_vision_icono.png" alt="Icono Visión">
+          <h3>Visión</h3>
+        </div>
+        <div class="tarjeta-fixed__back">
+          Queremos ser la mejor empresa ejecutora, consultora y supervisora de Proyectos de Inversión Pública y obras civiles; comprometida a prestar el servicio con calidad y efectividad.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div id="info-mision-vision" class="qs-content">
+                <div class="qs-columns">
+                    <!-- Columna Izquierda - MISIÓN -->
+                    <div class="qs-column">
+                    <h2>MISIÓN</h2>
+                    <ul>
+                    <li>Disponer de profesionales y técnicos comprometidos a la mejora continua del desarrollo del país.</li>
+                    <li>Fomentar una cultura proactiva con nuestros profesionales y técnicos.</li>
+                    <li>Desarrollar nuestras actividades con responsabilidad, innovación y preservación del medio ambiente.</li>
+                    </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- Columna Derecha - VISIÓN -->
+                    <div class="qs-column">
+                    <h2>VISION</h2>
+                    <ul>
+                    <li>Queremos ser la mejor empresa ejecutora, consultora y supervisora de Proyectos de Inversión Pública y obras civiles; comprometida a prestar el servicio con calidad y efectividad.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="info-valores" class="qs-content">
+                <h2>VALORES</h2>
+                <ul class="valores-lista">
+                    <!-- con strong se pone en negrita <strong>Respeto:</strong><br>-->
+                  <li class="valor-respeto">
+            <div class="valor-inner">
+                <strong>Respeto:</strong>
+                <p>En el respeto encontramos la fuerza para superar conflictos y construir soluciones.</p>
+            </div>
+        </li>
+
+        <li class="valor-empatia">
+            <div class="valor-inner">
+                <strong>Empatía:</strong>
+                <p>Escuchar activamente, prestar atención y mostrar preocupación por las necesidades de nuestros miembros de trabajo.</p>
+            </div>
+        </li>
+
+        <li class="valor-responsabilidad">
+            <div class="valor-inner">
+                <strong>Responsabilidad:</strong>
+                <p>Contribuir positivamente a la sociedad y al medio ambiente.</p>
+            </div>
+        </li>
+
+        <li class="valor-honestidad">
+            <div class="valor-inner">
+                <strong>Honestidad:</strong>
+                <p>Actuar con transparencia y rectitud en todas las acciones que desempeñamos.</p>
+            </div>
+        </li>
+
+        <li class="valor-tolerancia">
+            <div class="valor-inner">
+                <strong>Tolerancia:</strong>
+                <p>Mostrar comprensión ante la diversidad y diferencias dentro de nuestro equipo.</p>
+            </div>
+        </li>
+
+        <li class="valor-solidaridad">
+            <div class="valor-inner">
+                <strong>Solidaridad:</strong>
+                <p>Comprender, apoyar y mostrar empatía ante las posibles adversidades.</p>
+            </div>
+        </li>
+
+        <li class="valor-innovacion">
+            <div class="valor-inner">
+                <strong>Innovación:</strong>
+                <p>Buscar nuevas ideas y soluciones que nos permitan mejorar nuestros servicios.</p>
+            </div>
+        </li>
+
+        <li class="valor-integridad">
+            <div class="valor-inner">
+                <strong>Integridad:</strong>
+                <p>Asumir la responsabilidad de nuestras acciones y mostrar respeto por los miembros del equipo.</p>
+            </div>
+        </li>
+
+        <li class="valor-confianza">
+            <div class="valor-inner">
+                <strong>Confianza:</strong>
+                <p>Fomentar un ambiente laboral grato, logrando unión y optimismo entre todos.</p>
+            </div>
+        </li>
+
+        <li class="valor-calidad">
+            <div class="valor-inner">
+                <strong>Calidad:</strong>
+                <p>Formular y elaborar proyectos de inversión pública y privada de alta calidad.</p>
+            </div>
+        </li>
+
+    </ul>
+</div>
+            <div id="info-datos" class="qs-content">
+                <h2>DATOS GENERALES</h2>
+                <ul>
+                    <li>Razon Social: WAYRA APURIMAC E.I.R.L.</li>
+                    <li>RUC: 20564495663
+                          <button id="toggleIframe" class="toggle-btn">▼</button>
+                            <div id="sunatIframeContainer" style="margin-top: 10px; width: 100%">
+                            <iframe src="https://e-consultaruc.sunat.gob.pe/cl-ti-itmrconsruc/FrameCriterioBusquedaWeb.jsp" width="100%" height="200" style="border:0;"></iframe>
+                            </div>
+                    </li>
+                    <li>Partida Electrónica: 11048701 (<a href="https://conoce-aqui.sunarp.gob.pe/conoce-aqui/inicio" target="_blank">acceder al enlace</a>) <!-- Para crear hipervinculo -->
+                    </li>
+                    <li>Ejecutor de Obras: 87277</li>
+                    <li>Codigo de Bienes: B0389473</li>
+                    <li>Consultor de Obras: C56928<br>
+                    1 - Consultoría en obras urbanas edificaciones y afines - Categoría C (*)<br>
+                    2 - Consultoría en obras viales, puertos y afines - Categoría A<br>
+                    3 - Consultoría en obras de saneamiento y afines - Categoría A<br>
+                    4 - Consultoría en obras electromecánicas, energéticas, telecomunicaciones y afines - Categoría A<br>
+                    5 - Consultoría en obras de represas , irrigaciones y afines - Categoría A
+                    </li>
+                    <li>Codigo de Servicios: S0815981</li>
+                    <li>Constancia del RNP (<a href="https://www.rnp.gob.pe/Constancia/RNP_Constancia/default_Todos.asp?RUC=20564495663" target="_blank">acceder al enlace</a>)<!-- Para crear hipervinculo -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- NUESTROS PROYECTOS -->
+<section id="proyectos" class="section">
+
+  <div class="menu-wrapper">
+    <div class="proyectos-menu">
+
+      <button class="proyectos-title">Trabajos Realizados</button>
+      <button class="expediente-title">Expediente Tecnico</button>
+      <button class="mantenimiento-title">Mantenimiento</button>
+      <button class="inversion-title">Proyecto de Inversion</button>
+      <button class="contratos-title" onclick="descargarExcel()">Archivo Excel</button>
+
+      <script>
+        function descargarExcel() {
+          const link = document.createElement("a");
+          link.href = "archivos/CONTRATOS_WAYRA.xlsx";
+          link.download = "CONTRATOS_WAYRA.xlsx";
+          link.click();
+        }
+      </script>
+
+    </div>
+  </div>
+
+  <!-- CONTENEDOR PRINCIPAL DE LA SECCIÓN -->
+  <div class="proyectos-container">
+
+    <!-- Listado de proyectos -->
+    <div id="proyectos-list-section">
+      <div id="proyectos-list" class="proyectos-list"></div>
+
+      <div class="proyectos-pagination-row">
+
+        <div class="proyectos-pagination-left">
+          <label class="show-label">Show:</label>
+          <select id="proyectos-show" class="show-select">
+            <option value="8" selected>8</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="proyectos-pagination-right" id="proyectos-pages"></div>
+
+      </div>
+    </div>
+
+    <!-- Detalle de proyecto (ficha) -->
+    <div id="proyecto-detalle-section" style="display:none;">
+
+      <!--<div style="margin-bottom:14px;">-->
+      <!-- boton volver con clase "custom" (estilos en CSS) -->
+      <!--<button class="volver-btn custom" id="volverFicha">VOLVER</button>
+      </div>-->
+
+      <!-- Aquí el JS (openProyectoDetalle) insertará el layout con imagen principal, info y miniaturas -->
+      <div id="proyecto-detalle"></div>
+    </div>
+
+    <!-- Modal para ampliar imagen -->
+    <!--<div id="imageModal" class="modal">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <div class="modal-content-container"></div>
+      <a class="prev" onclick="cambiarImagen(-1)">&#10094;</a>
+      <img class="modal-content" id="modalImg">
+      <a class="next" onclick="cambiarImagen(1)">&#10095;</a>
+      <div id="caption"></div>
+    </div>-->
+
+  </div>
+</section>
+
+    <!-- REALIZAR COTIZACION -->
+<section id="cotizacion" class="section">
+  <form id="formCotizacion" action="enviar_cotizacion.php" class="form-nuevo" autocomplete="off" method="POST" enctype="multipart/form-data">
+    <!-- Título animado -->
+    <h2 class="cotizacion-titulo-general animar-titulo-formulario">
+      COMPLETE EL FORMULARIO
+    </h2>
+    
+    <div class="row">
+
+      <!-- Nombre -->
+      <div class="col">
+        <!--<label class="etiqueta-form">
+          <span class="flecha">&#10148;</span> Nombre
+          <span class="obligatorio">*</span>
+        </label>-->
+        <div class="input-icon flecha-izquierda">
+  <span class="icon"><img src="imagenes/icono_nombre.png" alt="icono nombre"></span>
+  <div class="field">
+    <input type="text"
+           name="nombre"
+           maxlength="50"
+           pattern="[A-Za-z ]{1,50}"
+           placeholder="Escriba su nombre(s)"
+           title="Solo letras de la A a la Z"
+           required>
+    <label class="floating">Escriba su nombre(s)</label>
+    <span class="error-message">Por favor ingrese su nombre.</span>
+  </div>
+</div>
+      </div>
+
+      <!-- Apellido -->
+      <div class="col">
+        <!--<label class="etiqueta-form">
+          <span class="flecha">&#10148;</span> Apellidos
+          <span class="obligatorio">*</span>
+        </label>-->
+        <div class="input-icon">
+  <span class="icon"><img src="imagenes/icono_apellido.png" alt="icono apellido"></span>
+  <div class="field">
+    <input type="text"
+           name="apellido"
+           maxlength="50"
+           pattern="[A-Za-z ]{1,50}"
+           placeholder="Escriba sus apellidos"
+           title="Solo letras de la A a la Z"
+           required>
+    <label class="floating">Escriba sus apellidos</label>
+    <span class="error-message">Por favor ingrese sus apellidos.</span>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!-- DNI -->
+      <div class="col">
+        <!--<label class="etiqueta-form">
+          <span class="flecha">&#10148;</span> DNI
+          <span class="obligatorio">*</span>
+        </label>-->
+        <div class="input-icon flecha-izquierda">
+  <span class="icon"><img src="imagenes/icono_dni.png" alt="icono dni"></span>
+  <div class="field">
+    <input type="text"
+           name="dni"
+           maxlength="8"
+           pattern="[0-9]{8}"
+           placeholder="Escriba su numero de dni"
+           title="Solo numeros de hasta 8 digitos"
+           required>
+    <label class="floating">Escriba su numero de dni</label>
+    <span class="error-message">Ingrese su DNI (8 dígitos).</span>
+  </div>
+</div>
+      </div>
+
+      <!-- Dirección -->
+      <div class="col">
+        <!--<label class="etiqueta-form">
+          <span class="flecha">&#10148;</span> Dirección
+          <span class="obligatorio">*</span>
+        </label>-->
+        <div class="input-icon">
+  <span class="icon"><img src="imagenes/icono_direccion.png" alt="icono direccion"></span>
+  <div class="field">
+    <input type="text"
+           name="direccion"
+           maxlength="80"
+           placeholder="Escriba su direccion de domicilio"
+           title="Solo letras, números y símbolos"
+           required>
+    <label class="floating">Escriba su direccion de domicilio</label>
+    <span class="error-message">Ingrese la dirección.</span>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!-- N° de contacto -->
+      <div class="col">
+        <!--<label class="etiqueta-form">
+          <span class="flecha">&#10148;</span> Nº de contacto
+          <span class="obligatorio">*</span>
+        </label>-->
+        <div class="input-icon flecha-izquierda">
+  <span class="icon"><img src="imagenes/icono_contacto.png" alt="icono contacto"></span>
+  <div class="field">
+    <input type="text"
+           name="contacto"
+           maxlength="9"
+           pattern="[0-9]{9}"
+           placeholder="Escriba su numero de contacto"
+           title="Solo numeros de hasta 9 digitos"
+           required>
+    <label class="floating">Escriba su numero de contacto</label>
+    <span class="error-message">Ingrese su número de contacto (9 dígitos).</span>
+  </div>
+</div>
+      </div>
+
+      <!-- Correo -->
+      <div class="col">
+        <!--<label class="etiqueta-form">
+          <span class="flecha">&#10148;</span> Correo
+          <span class="obligatorio">*</span>
+        </label>-->
+        <div class="input-icon">
+  <span class="icon"><img src="imagenes/icono_correo.png" alt="icono correo"></span>
+  <div class="field">
+    <input type="email"
+           name="correo"
+           maxlength="60"
+           placeholder="Escriba su correo electronico"
+           title="Solo letras, números y símbolos"
+           required>
+    <label class="floating">Escriba su correo electronico</label>
+    <span class="error-message">Ingrese un correo válido.</span>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <!-- Tipo de entidad -->
+     <!--<div class="col">-->
+    <div class="campo-form">
+    <!--<label class="etiqueta-form">
+      <span class="flecha">&#10148;</span> Seleccione el tipo de entidad
+      <span class="obligatorio">*</span>
+    </label>-->
+    <div class="contenedor-select flecha-izquierda">
+    <span class="placeholder-superior">Tipo de entidad</span>
+    <div class="cajon-select" id="cajonEntidad">
+      <div class="cajon-opcion">
+        <span class="flecha-cajon" id="flechaEntidad">&#9654;</span>
+        <span id="entidadSeleccionada">Seleccione...</span>
+      </div>
+      <div class="opciones-cajon" id="opcionesEntidad">
+        <div class="opcion-cajon">
+          <span class="cuadrado-cajon" id="cuadradoPublica"></span> Pública</div>
+        <div class="opcion-cajon">
+          <span class="cuadrado-cajon" id="cuadradoPrivada"></span> Privada</div>
+      </div>
+      <input type="hidden" name="tipo_entidad" id="inputEntidad" required>
+    </div>
+    </div>
+    </div>
+
+    <!-- Nombre de la entidad/empresa -->
+     <div class="col">
+    <!--<label class="etiqueta-form">
+      <span class="flecha">&#10148;</span> Nombre de la entidad y/o Empresa que requiere el servicio
+      <span class="obligatorio">*</span>
+    </label>-->
+    <div class="input-icon flecha-izquierda">
+  <span class="icon"><img src="imagenes/icono_entidad.png" alt="icono empresa"></span>
+  <div class="field">
+    <input type="text"
+           name="empresa"
+           maxlength="100"
+           pattern="[A-Za-z0-9 .,&-]{1,100}"
+           placeholder="Escriba el nombre de la entidad o empresa"
+           title="Solo letras, números y símbolos"
+           required>
+    <label class="floating">Escriba el nombre de la entidad o empresa</label>
+    <span class="error-message">Ingrese el nombre de la entidad o empresa.</span>
+  </div>
+</div>
+</div>
+
+    <!-- RUC -->
+     <div class="col">
+    <!--<label class="etiqueta-form">
+      <span class="flecha">&#10148;</span> RUC
+      <span class="obligatorio">*</span>
+    </label>-->
+    <div class="input-icon flecha-izquierda">
+  <span class="icon"><img src="imagenes/icono_ruc.png" alt="icono ruc"></span>
+  <div class="field">
+    <input type="text"
+           name="ruc"
+           maxlength="11"
+           pattern="[0-9]{11}"
+           placeholder="Escriba su ruc"
+           title="Solo numeros de hasta 11 digitos"
+           required>
+    <label class="floating">Escriba su ruc</label>
+    <span class="error-message">Ingrese el RUC.</span>
+  </div>
+</div>
+</div>
+
+    <!-- Tipo de servicio -->
+     <!--<div class="col">-->
+    <div class="campo-form">
+    <!--<label class="etiqueta-form">
+      <span class="flecha">&#10148;</span> Qué tipo de servicio requiere cotizar
+      <span class="obligatorio">*</span>
+    </label>-->
+    <div class="contenedor-select flecha-izquierda">
+    <span class="placeholder-superior">Tipo de servicio</span>
+    <div class="cajon-select" id="cajonServicio">
+      <div class="cajon-opcion">
+        <span class="flecha-cajon" id="flechaServicio">&#9654;</span>
+        <span id="servicioSeleccionado">Seleccione...</span>
+      </div>
+      <div class="opciones-cajon" id="opcionesServicio">
+        <div class="opcion-cajon">
+          <span class="cuadrado-cajon" id="cuadradoProyecto"></span> Formulación de Proyecto de Inversión</div>
+        <div class="opcion-cajon">
+          <span class="cuadrado-cajon" id="cuadradoExpediente"></span> Elaboración de Expediente Técnico</div>
+        <div class="opcion-cajon">
+          <span class="cuadrado-cajon" id="cuadradoMantenimiento"></span> Mantenimiento</div>
+      </div>
+      <input type="hidden" name="tipo_servicio" id="inputServicio" required>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Detalles de requerimiento -->
+    <!--<label class="etiqueta-form">
+      <span class="flecha">&#10148;</span> Escriba más detalles de la necesidad de su requerimiento
+      <span class="obligatorio">*</span>
+    </label>-->
+    <div class="input-textarea flecha-izquierda">
+  <span class="icon"><img src="imagenes/icono_lapiz.png" alt="icono detalle"></span>
+  <div class="field">
+    <textarea name="detalle"
+              maxlength="1000"
+              placeholder="Escriba mas detalles de su requerimiento"
+              title="Sea especifico al colocar los datos"
+              required></textarea>
+    <label class="floating">Escriba mas detalles de su requerimiento</label>
+    <span class="error-message">Ingrese más detalles sobre su requerimiento.</span>
+  </div>
+</div>
+
+
+    <!-- Adjuntar documento -->
+    <label class="etiqueta-form">
+      <span class="flecha">&#10148;</span> Adjunte término de referencia y/o documento que avale la necesidad (opcional)
+    </label>
+    <div class="input-upload">
+      <label for="adjunto">
+        <img src="imagenes/icono_subirarchivo.png" alt="icono upload">
+        <span>Pulse aquí para añadir archivos</span>
+      </label>
+      <input type="file" id="adjunto" name="adjunto" multiple style="display:none;">
+      <div id="mensajeArchivo" style="display:none;"></div>
+    </div>
+
+    <!-- Contacto con representante legal -->
+    <!--<div class="contacto-legal">
+      <span class="flecha">&#10148;</span> Contacte con el Representante Legal
+      <a href="https://wa.me/51941468993" target="_blank">
+        <img src="imagenes/icono_whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>-->
+
+  <!-- Generar documento PDF -->
+  <!--<div id="resultado"></div>-->
+  <div class="botones">
+    <button type="submit" class="btn-enviar" id="btnEnviar">Enviar</button>
+    <button type="button" class="btn-cancelar" id="btnCancelar">Cancelar</button>
+  </div>
+  <!-- Mensaje de estado después de enviar -->
+  <div id="mensaje-estado" style="margin-top:15px;"></div>
+  </form>
+  </section>
+
+  <!-- Librería jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- jsPDF AutoTable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+  <script src="script.js"></script>
+
+     <!-- Generar documento Word -->
+    <!--<div id="resultado"></div>
+    <div class="botones">
+      <button type="submit" class="btn-enviar" id="btnEnviar">Enviar</button>
+      <button type="button" class="btn-cancelar" id="btnCancelar">Cancelar</button>
+    </div>
+  </form>
+</section>-->
+<!-- Incluye los scripts necesarios para docxtemplater -->
+<!--<script src="https://unpkg.com/pizzip@3.0.5/dist/pizzip.min.js"></script>
+<script src="https://unpkg.com/docxtemplater@3.30.0/build/docxtemplater.js"></script>
+<script src="script.js"></script>-->
+    
+
+    <!-- CONSULTA -->
+    <section id="contacto" class="section">
+        <div class="contacto-main">
+            <div class="contacto-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.2376571919416!2d-72.87672156447105!3d-13.63725305092401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916d02de71b9c6c9%3A0x9fd5b130601ef337!2sCentro%20de%20Conciliaci%C3%B3n%20Abancay!5e0!3m2!1ses!2spe!4v1756217879640!5m2!1ses!2spe" width="100%" height="410" style="border:0;"></iframe>
+            </div>
+            <!-- Formulario -->
+    <div class="contacto-formulario">
+      <h3>CONTÁCTANOS</h3>
+      <h2>Formulario de Contacto</h2>
+      <p>Si desea realizar alguna consulta o recomendacion llene el formulario y le responderemos a la brevedad.</p>
+
+      <form class="contacto-form" autocomplete="off" method="POST" action="https://formspree.io/f/xldpdwdd">
+        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+        <input type="text" name="asunto" placeholder="Asunto" required>
+        <textarea name="mensaje" placeholder="Mensaje (OPCIONAL)" required></textarea>
+
+        <div class="enviar-container">
+          <button type="submit">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+        <div class="contacto-datos">
+    <div class="dato">
+      <img src="imagenes/icono_gps.png" alt="Dirección" class="icono">
+      <div class="dato-texto">
+        <h3>Dirección</h3>
+        <p>Jr. Lima N°101</p>
+      </div>
+    </div>
+
+    <div class="dato">
+      <img src="imagenes/icono_telefono.png" alt="Teléfono" class="icono">
+      <div class="dato-texto">
+        <h3>Celular</h3>
+        <p><span class="punto"></span> (51) 941468993</p>
+        <p><span class="punto"></span> (51) 984232314</p>
+      </div>
+    </div>
+
+    <div class="dato">
+      <img src="imagenes/icono_mensaje.png" alt="Email" class="icono">
+      <div class="dato-texto">
+                <h3>Email</h3>
+              <p><span class="punto"></span> wayraapurimac@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Pie de la pagina web-->
+    <footer>
+        Copyright © 2025 WAYRA APURIMAC E.I.R.L. - Todos los derechos reservados
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById('toggleIframe');
+        const iframeContainer = document.getElementById('sunatIframeContainer');
+
+        toggleBtn.addEventListener('click', () => {
+            if (iframeContainer.style.display === 'none') {
+                iframeContainer.style.display = 'block';
+                toggleBtn.textContent = '▼'; // flecha hacia abajo
+            } else {
+                iframeContainer.style.display = 'none';
+                toggleBtn.textContent = '►'; // flecha hacia la derecha
+            }
+        });
+
+        // Ocultar iframe al inicio
+        iframeContainer.style.display = 'none';
+        toggleBtn.textContent = '►';
+    });
+</script>
+
+<div id="modal-imagen" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-contenido">
+    <span class="cerrar-modal" aria-label="Cerrar">&times;</span>
+    <a class="prev" aria-label="Anterior">&#10094;</a>
+    <img id="imagen-modal" src="" alt="Vista ampliada">
+    <a class="next" aria-label="Siguiente">&#10095;</a>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-menu a");
+
+  // Observa cuando una sección entra en el área visible
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Elimina la clase active de todos
+        navLinks.forEach(link => link.classList.remove("active"));
+
+        // Encuentra el enlace cuyo onclick coincide con la sección visible
+        const id = entry.target.id;
+        const activeLink = [...navLinks].find(link =>
+          link.getAttribute("onclick")?.includes(id)
+        );
+
+        // Si existe, agrega la clase active
+        if (activeLink) activeLink.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.4  // Ajusta qué tanto debe mostrarse la sección (40%)
+  });
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
+<!--<script src="script.js"></script>-->
+</body>
+</html>
